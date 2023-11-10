@@ -32,14 +32,14 @@ module "ccn" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12 |
-| <a name="requirement_tencentcloud"></a> [tencentcloud](#requirement\_tencentcloud) | >1.80.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=0.12 |
+| <a name="requirement_tencentcloud"></a> [tencentcloud](#requirement\_tencentcloud) | >=1.81.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tencentcloud"></a> [tencentcloud](#provider\_tencentcloud) | >1.80.1 |
+| <a name="provider_tencentcloud"></a> [tencentcloud](#provider\_tencentcloud) | >=1.81.0 |
 
 ## Modules
 
