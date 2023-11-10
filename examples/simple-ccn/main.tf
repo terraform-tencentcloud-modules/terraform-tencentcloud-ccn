@@ -26,4 +26,3 @@ module "ccn" {
 
   attach_ccn = local.attach_ccn
 }
-

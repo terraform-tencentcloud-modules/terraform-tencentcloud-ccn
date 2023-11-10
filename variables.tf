@@ -1,4 +1,4 @@
-// ccn
+# ccn
 variable "create_ccn" {
   description = "Controls if CCN should be created (it affects almost all resources)"
   type        = bool
@@ -47,7 +47,7 @@ variable "ccn_id" {
   default     = ""
 }
 
-// ccn attachment
+# ccn attachment
 variable "attach_ccn" {
   description = "Controls if attach CCN instance to other network instances."
   type        = bool
@@ -84,7 +84,7 @@ variable "attachment_description" {
   default     = ""
 }
 
-// ccn bandwidth limit
+# ccn bandwidth limit
 variable "set_bandwith_limit" {
   description = "Control if set ccn bandwidth limit."
   type        = bool

@@ -1,6 +1,32 @@
 # terraform-tencentcloud-ccn
 Terraform module which creates CCN resources on TencentCloud
 
+## Usage
+
+```hcl
+module "ccn" {
+  source  = "terraform-tencentcloud-modules/ccn/tencentcloud"
+  version = "1.0.0"
+
+
+  ccn_name             = "ccn_test"
+  bandwidth_limit_type = "INTER_REGION_LIMIT"
+  charge_type          = "POSTPAID"
+  ccn_description      = "create for test"
+  ccn_tags = {
+    createdBy = "terraform"
+  }
+
+  attach_ccn = false
+}
+```
+
+## Examples
+
+- [Simple CCN](https://github.com/terraform-tencentcloud-modules/terraform-tencentcloud-ccn/tree/master/examples/simple-ccn)
+- [Exist CCN](https://github.com/terraform-tencentcloud-modules/terraform-tencentcloud-ccn/tree/master/examples/exist-ccn)
+- [Complete](https://github.com/terraform-tencentcloud-modules/terraform-tencentcloud-ccn/tree/master/examples/complete)
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -56,3 +82,12 @@ No modules.
 |------|-------------|
 | <a name="output_ccn_id"></a> [ccn\_id](#output\_ccn\_id) | The Id of CCN. |
 <!-- END_TF_DOCS -->
+
+## Authors
+
+Created and maintained by [TencentCloud](https://github.com/terraform-providers/terraform-provider-tencentcloud)
+
+## License
+
+Mozilla Public License Version 2.0.
+See LICENSE for full details.
