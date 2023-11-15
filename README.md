@@ -6,7 +6,7 @@ Terraform module which creates CCN resources on TencentCloud
 ```hcl
 module "ccn" {
   source  = "terraform-tencentcloud-modules/ccn/tencentcloud"
-  version = "1.0.0"
+  version = "0.3.0"
 
 
   ccn_name             = "ccn_test"
