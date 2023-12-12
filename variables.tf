@@ -106,7 +106,7 @@ variable "dst_region" {
 variable "bandwidth_limit" {
   description = "Limitation of bandwidth."
   type        = number
-  default     = "0"
+  default     = 0
 }
 
 # variable "config_route" {
